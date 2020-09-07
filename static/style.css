@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --primary: #FFC636;
+    --secondary: #0A0B5B;
+  }
+
+body{
+    background: var(--secondary);
+}
+.container h1{
+    font-size: 1.5em;
+     text-align: center;
+    color: aliceblue;
+    font-weight: normal;
+    padding: 10px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--primary);
+}
+.enter {
+    margin: 15px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+.form input{
+    width: 50%;
+    margin:auto ;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.05);
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: 2px solid #9893D8;
+    color: #f2f2f2;
+}
+.head{
+    background:rgba(255,255,255,0.05); 
+    color: #f2f2f2;
+    border-radius: 9px;
+    width: 100%;
+}
+
+.btn:hover{
+    color: #222;
+    background:var(--primary)
+}
+
+.display{
+    background:#07083E;;
+}
+.display h1{
+font-size: 1.5em;
+text-align: center;
+color: aliceblue;
+font-weight: normal;
+padding: 15px 15px;
+}
+.container-card h3{
+    color: yellow;
+}
+.container-card p{
+    color: aliceblue;
+}
+
+ .btn-1{
+   background:rgba(0,0,128,0.05) ;
+   border-radius: 5px;
+   width: 40%;
+   color: aliceblue;
+    
+}
+
+.btn-1:hover{
+    background-color: var(--primary);
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 150px;
+    grid-gap: 20px;
+    padding:0.5em;
+}
+.container-card {
+
+    border: 4px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+}
+footer{
+    height: 10px;
+    text-align: center;
+    color: var(--primary);
+
+}
+footer p{
+    padding-top: 50px;
+    padding: 30px 10px;
+}
+
+
+
+@media screen and (min-width:1200px){
+    body{
+        font-size: 20px;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 127px;
+        grid-gap: 20px;
+        padding: 1.5em 6rem;
+    }   
+    .btn-1{
+        width: 25%;
+        border-radius: 10px;
+    }
+    footer p{
+        padding-top:30px ;
+        padding: 10px 10px;
+    }
+    form {
+        
+    }
+    .head{
+        background:rgba(255,255,255,0.05); 
+        color: #f2f2f2;
+        border-radius: 9px;
+        width: 40%;
+    }
+   
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo app</title>
+    <link href="../static/style.css" rel="stylesheet"  type="text/css">
+   
+</head>
+<body>
+    <div class="container">
+   <h1> Welcome to to do app</h1>
+   </div>
+   <section class="enter">
+        
+    <form class="form" action="/" method="post">
+        <input type="text" name="head" placeholder="enter the heading">
+        <input type="text" name="desc" placeholder="describe the event">
+        <input class="btn" type="submit" value="add an note">   
+    </form>
+
+   </section>
+   <section class="display">
+       <h1>Todays's task </h1>
+        <div class="grid">
+            <% for(let i of addNote){ %>
+            <div class="container-card">
+                  
+               <h3><%=i.head %> </h3>  
+                <p><b><%= i.desc %></b></p>
+                <a href="/edit/<%=i._id %> ">
+                <input type="submit"id="edit" class="btn-1" value="edit">
+            </a>
+            <a href="/delete/<%=i._id  %>">
+                <input type="submit" id="del" class="btn-1" value="delete">
+            </a>
+            </div>
+            <% } %> 
+        </div>
+   </section>
+   <footer><p> copyright 2020 </p></footer>
+  
+</body>
+</html>
