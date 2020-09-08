@@ -8,7 +8,6 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 const toDo = require('./models/todo');
 const mongoose = require('mongoose');
-const todo = require('./models/todo');
 mongoose.connect('mongodb://localhost/todo',{useNewUrlParser:true,useUnifiedTopology: true});
 
 const db = mongoose.connection;
