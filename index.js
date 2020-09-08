@@ -20,7 +20,7 @@ db.once('open',function(){
 });
 
 
- //const note = new toDo({head:'saurav',desc:'rt'});
+
 
 app.set('view engine','ejs');
 app.use('/static',express.static('static'))
